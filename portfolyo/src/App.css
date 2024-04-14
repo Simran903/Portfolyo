@@ -1,0 +1,13 @@
+#root {
+  box-sizing: border-box;
+  background-color: #1c281c;
+  color: white;
+  padding: 0 5rem;
+}
+
+@media (max-width: 640px) {
+  #root{
+    width: 100vh;
+    padding: 2rem;
+  }
+}

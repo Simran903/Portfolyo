@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-glow {
+    box-shadow: 0 0 15px 5px rgba(173, 255, 47, 0.5); /* Adjust the color and intensity as needed */
+  }
+  
+.slick-slide > div {
+    margin: 0 10px;
+  }
+
+.date {
+    color: white;
+}
+  
+  
