@@ -1,5 +1,4 @@
 import React from "react";
-import UseUserData from "../../components/customHook/UseUserData";
 import { motion } from "framer-motion";
 
 const cardVariants = {

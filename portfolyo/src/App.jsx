@@ -12,6 +12,7 @@ import Timeline from './pages/timeline/Timeline'
 
 function App() {
 
+
   return (
     <div className="">
       <Navbar />

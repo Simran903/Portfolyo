@@ -31,11 +31,11 @@ const Services = () => {
         <span className='italic text-3xl md:text-lg'>What I do</span>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
-        {userData.user.services.map((service, index) => (
+        {userData?.user?.services?.map((service, index) => (
           <div key={index}>
             <ServicesCard
-              image={service.image.url}
-              name={service.name}
+              image={service?.image.url}
+              name={service?.name}
               hueA={hues[index % hues.length][0]}
               hueB={hues[index % hues.length][1]}
             />

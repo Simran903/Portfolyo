@@ -45,10 +45,10 @@ const Home = () => {
                     <h1 className="">
                         <span className="text-2xl xl:text-lg">I am a </span>
                         <span className="text-4xl xl:text-2xl italic text-lime-500">
-                            {userData.user.about.title}
+                            {userData?.user.about.title}
                         </span>
                     </h1>
-                    <p className="opacity-50 text-xl xl:text-md">{userData.user.about.subTitle}</p>
+                    <p className="opacity-50 text-xl xl:text-md">{userData?.user.about.subTitle}</p>
                 </div>
             </div>
             <div className="flex items-center justify-center mt-20 xl:mt-0">
@@ -75,7 +75,7 @@ const Home = () => {
                             custom={3}
                         />
                         <motion.image
-                            href={userData.user.about.avatar.url}
+                            href={userData?.user.about.avatar.url}
                             width="50%"
                             x={imageX}
                             y={imageY}
