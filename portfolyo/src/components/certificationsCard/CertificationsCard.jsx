@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { GoChecklist } from "react-icons/go";
+
 
 const cardVariants = {
   offscreen: { y: 300 },
@@ -12,7 +14,7 @@ const cardVariants = {
 
 const hue = (h) => `hsl(${h}, 100%, 50%)`;
 
-function ServicesCard({ image, name, hueA, hueB }) {
+function ServicesCard({name, hueA, hueB }) {
   const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
 
   return (
@@ -29,11 +31,8 @@ function ServicesCard({ image, name, hueA, hueB }) {
         className="text-black text-xl font-semibold flex items-center justify-center bg-white rounded-2xl w-[300px] sm:w-[350px] h-[150px] sm:h-[175px] gap-5 border-[5px] border-lime-300"
         variants={cardVariants}
       >
-        <img
-          src={image}
-          alt="service"
-          className="rounded-full w-[15%] sm:w-[17%]"
-        />
+        
+        <GoChecklist className="text-xl font-bold w-10" />
         <span className="truncate">{name}</span>
       </motion.div>
     </motion.div>

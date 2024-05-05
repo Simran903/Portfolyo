@@ -1,6 +1,5 @@
 import React from 'react';
-import ServicesCard from '../../components/servicesCard/ServicesCard';
-import UseUserData from "../../components/customHook/UseUserData";
+import ServicesCard from '../../components/certificationsCard/CertificationsCard';
 
 const hues = [
   [340, 10],
@@ -11,31 +10,36 @@ const hues = [
   [120, 160]
 ];
 
-const Services = () => {
-  const { userData, error } = UseUserData();
+const certifications = () => {
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
-
-  if (!userData) {
-    return false;
-  }
+  const certifications = [
+    {
+      certificate: "The Complete 2024 Web Development Bootcamp"
+    },
+    {
+      certificate: "Programming in C++"
+    },
+    {
+      certificate: "Certificate in Advanced Excel"
+    },
+    {
+      certificate: "Crash Course on Python"
+    }
+  ]
 
   return (
     <div id='services' className="py-10">
       <div className="flex flex-col gap-2 justify-center items-center mb-14">
         <h1 className='text-[5rem] md:text-6xl font-bold bg-gradient-to-tr from-lime-400 to-white text-transparent inline-block bg-clip-text'>
-          Services
+          Certifications
         </h1>
-        <span className='italic text-3xl md:text-lg'>What I do</span>
+        <span className='italic text-3xl md:text-lg'>What I have</span>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
-        {userData?.user?.services?.map((service, index) => (
+        {certifications.map((element, index) => (
           <div key={index}>
             <ServicesCard
-              image={service?.image.url}
-              name={service?.name}
+              name={element?.certificate}
               hueA={hues[index % hues.length][0]}
               hueB={hues[index % hues.length][1]}
             />
@@ -46,4 +50,4 @@ const Services = () => {
   );
 }
 
-export default Services;
+export default certifications;

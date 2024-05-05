@@ -3,10 +3,9 @@ import Home from './pages/home/Home'
 import Navbar from './pages/navbar/Navbar'
 import About from './pages/about/About'
 import Skills from './pages/skills/Skills'
-import Services from './pages/Services/Services'
+import Certifications from './pages/certifications/Certifications'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
-import Testimonial from './pages/testimonial/Testimonial'
 import Footer from './pages/footer/Footer'
 import Timeline from './pages/timeline/Timeline'
 
@@ -19,10 +18,9 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Services />
+      <Certifications/>
       <Projects />
       <Timeline />
-      <Testimonial />
       <Contact />
       <Footer />
     </div>
